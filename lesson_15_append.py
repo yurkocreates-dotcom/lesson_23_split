@@ -2,16 +2,19 @@ tools = [
     "ChatGPT",
     "Claude",
     "Midjourney",
+    "Runway"
 ]
-tools.append("Midjourney")
+tools.remove( "Runway")
 print(tools)
+
 tasks = [
     "Learn Python",
-    "Build AI project"
+    "Build AI app",
+    "Study German",
+    "Workout"
 ]
-tasks.append("Push code to GitHub")
-tasks.append( "Study German")
-tasks.append( "Workout")
-print(  "Today's Tasks:")
+tasks.remove( "Study German")
+tasks.remove( "Workout")
+print("Remaining Tasks:")
 for task in tasks:
- print('-',task)
+    print('-',task)
